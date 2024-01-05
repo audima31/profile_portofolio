@@ -74,7 +74,7 @@ export default function Header() {
             Project
           </a>
           <a
-            href="#/"
+            href="/about"
             className={
               location.pathname === "/about"
                 ? "font-semibold leading-6 sm:text-base text-warna1 afterAccess"

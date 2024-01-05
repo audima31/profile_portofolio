@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import foto2 from "../../assets/images/Untitled-1.png";
 
 class Content2 extends Component {
   componentDidMount() {
@@ -25,9 +24,7 @@ class Content2 extends Component {
           </div>
           <div className="hidden sm:block">
             <div className="flex justify-center mt-2 ">
-              <div className="z-10">
-                <img src={foto2} alt="" />
-              </div>
+              <div className="z-10">{/* <img src={foto2} alt="" /> */}</div>
             </div>
           </div>
           <div>test</div>

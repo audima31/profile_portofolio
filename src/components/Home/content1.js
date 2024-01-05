@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import foto1 from "../../assets/images/FotoProfileGede.png";
-import foto3 from "../../assets/images/FotoProfile4.png";
-import foto2 from "../../assets/images/FotoProfile3.png";
-import foto4 from "../../assets/images/FotoProfile2.png";
+import foto1 from "../../assets/images/FotoProfile1.png";
+import foto2 from "../../assets/images/FotoProfile2.png";
 
 class content1 extends Component {
   componentDidMount() {
@@ -98,18 +96,18 @@ class content1 extends Component {
               {/* <h1 className="text-5xl">Brawijaya</h1>
               <h3 className="text-2xl">University</h3> */}
             </div>
-            <div className="z-10 hidden 2xl:block">
+            <div className="z-10 hidden 2xl:block relative bottom-0">
               <img src={foto1} alt="" />
             </div>
             <div className="z-10 hidden lg:block 2xl:hidden">
-              <img src={foto3} alt="" />
+              <img src={foto2} alt="" />
             </div>
             <div className="z-10 hidden md:block lg:hidden 2xl:hidden mt-3">
               <img src={foto2} alt="" />
             </div>
 
             <div className="text-right text-warna1">
-              <h1 className="text-5xl">1 Years</h1>
+              <h1 className="text-4xl">1 Years</h1>
               <h3 className="text-2xl">Experience</h3>
             </div>
           </div>
