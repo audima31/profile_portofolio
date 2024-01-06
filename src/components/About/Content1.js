@@ -21,7 +21,7 @@ class Content1 extends Component {
             </div>
 
             {/*  */}
-            {/* <div class="profilePhoto">
+            <div class="profilePhoto">
               <div class="content">
                 <div class="back">
                   <div class="back-content">
@@ -29,7 +29,7 @@ class Content1 extends Component {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
             {/*  */}
           </div>
         </div>

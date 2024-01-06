@@ -23,12 +23,11 @@ export default function Header() {
   return (
     <header>
       {/* Buat Web */}
-      <nav
-        // flex max-w-7xl  mx-auto items-center justify-between p-6 lg:px-8"
+      {/* <nav
         className=" flex items-center justify-center p-6 pb-10 lg:px-8"
         aria-label="Global"
       >
-        {/* <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
@@ -37,7 +36,7 @@ export default function Header() {
               alt=""
             />
           </a>
-        </div> */}
+        </div>
         <div
           //  flex-1 lg:hidden
           className="lg:hidden ml-auto"
@@ -51,7 +50,6 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        /{" "}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <a
             href="/"
@@ -84,10 +82,10 @@ export default function Header() {
             About
           </a>
         </Popover.Group>
-      </nav>
+      </nav> */}
       / {/*  */}
       {/* Ini buat mobile */}
-      <Dialog
+      {/* <Dialog
         as="div"
         className="lg:hidden"
         open={mobileMenuOpen}
@@ -98,12 +96,11 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5 ">
               <span className="sr-only">Your Company</span>
-              {/* <img
+              <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
-              /> */}
-              <h1>Audima's Portoo</h1>
+              />
             </a>
             <button
               type="button"
@@ -140,7 +137,21 @@ export default function Header() {
             </div>
           </div>
         </Dialog.Panel>
-      </Dialog>
+      </Dialog> */}
+      {/* Logo */}
+      <nav
+        className=" flex items-center justify-start p-4 pb-8 lg:px-8"
+        aria-label="Global"
+      >
+        <Popover.Group className="hidden lg:flex lg:gap-x-12">
+          <h1
+            className="logo font-semibold italic text-3xl underline"
+            style={{ color: "#323030" }}
+          >
+            AO
+          </h1>
+        </Popover.Group>
+      </nav>
     </header>
   );
 }

@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import foto1 from "../../assets/images/FotoProfile1.png";
-import foto2 from "../../assets/images/FotoProfile2.png";
+import foto2 from "../../assets/images/Group 19 (1).png";
 
 class content1 extends Component {
   componentDidMount() {
     // Disable scrolling when the component mounts
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
   }
 
   componentWillUnmount() {
     // Enable scrolling when the component is about to unmount
-    document.body.style.overflow = "visible";
+    // document.body.style.overflow = "visible";
   }
 
   render() {
@@ -19,9 +19,11 @@ class content1 extends Component {
         <div className="flex justify-center mb-10 ">
           <div>
             <p className="text-center font-semibold text-3xl md:text-5xl lg:text-6xl text-warna1 fade-in-out">
-              I'm <label className="text-warna2">Audima Oktasena,</label>
+              {/* <label className="text-warna2">Hello, it's me</label> */}
+              <label className="text-warna2">Audima Oktasena</label>
             </p>
             <p className="text-center font-semibold text-3xl md:text-5xl lg:text-6xl mt-3 text-warna1 fade-in-out">
+              {/* Audima Oktasena<label className="text-warna2">.</label> */}
               Front-End Web Developer
             </p>
           </div>
@@ -107,7 +109,7 @@ class content1 extends Component {
             </div>
 
             <div className="text-right text-warna1">
-              <h1 className="text-4xl">1 Years</h1>
+              <h1 className="text-4xl">2 Years</h1>
               <h3 className="text-2xl">Experience</h3>
             </div>
           </div>

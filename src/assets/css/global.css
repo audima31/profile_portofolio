@@ -4,9 +4,21 @@ html,body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  /* font-family: 'Lobster Two', sans-serif; */
+  /* font-family: 'Dancing Script', cursive; */
   /* font-family: 'Urbanist', sans-serif; */
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #030816, #061838, #051737, #030816);
+  /* background: linear-gradient(to right, #030816, #061838, #051737, #030816); */
+  /* background:  conic-gradient(at right bottom, rgb(29, 78, 216), rgb(17, 33, 88), rgb(17, 24, 39)); */
+  /* background: conic-gradient(at center bottom, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42)); */
+  /* background: conic-gradient(at center bottom, rgb(15, 23, 42), rgb(8,27,41), rgb(15, 23, 42)); */
+  /* background: radial-gradient(at left top, rgb(15, 23, 42), rgb(8,27,41), rgb(15, 23, 42)); */
+  /* background: #081b29; */
+  background: #000000;
+}
+
+.logo{
+  font-family: 'Lobster Two', sans-serif;
 }
 
 /* Animasi Home */
