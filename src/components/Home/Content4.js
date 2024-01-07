@@ -15,6 +15,7 @@ import {
   MidtransLogo,
 } from "../../assets/images/Skill";
 import {
+  ComingSoon,
   Mayastik,
   Oktashoes,
   PortofolioWeb,
@@ -59,10 +60,10 @@ class Content4 extends Component {
                     {/* Card */}
                     <div>
                       <div>
-                        <h1 className="text-warna2 md:text-2xl lg:text-4xl xl:text-5xl font-bold">
+                        <h1 className="text-warna2 md:text-2xl lg:text-4xl xl:text-5xl font-bold fade-in-out">
                           My
                         </h1>
-                        <h1 className="text-warna1 md:text-3xl lg:text-5xl xl:text-6xl font-bold underline">
+                        <h1 className="text-warna1 md:text-3xl lg:text-5xl xl:text-6xl font-bold underline fade-in-out">
                           Projects<label className="text-warna2">.</label>
                         </h1>
                       </div>
@@ -140,7 +141,7 @@ class Content4 extends Component {
                             Sistem Manajemen Pembayaran
                           </p>
                           <p class="text-warna3 textCaption2 text-sm">
-                            Payment Web App & Mobile App
+                            Invoice Management Web App & Mobile App
                           </p>
                           <img
                             className="techStack"
@@ -247,7 +248,7 @@ class Content4 extends Component {
                             Personal Portfolio
                           </p>
                           <p class="text-warna3 textCaption2 text-sm">
-                            Web App
+                            Portfolio Web App
                           </p>
                           <img
                             className="techStack6"
@@ -315,7 +316,7 @@ class Content4 extends Component {
                   <div class="row-span-3 flex justify-center">
                     {/* Card */}
                     <div>
-                      <div className="text-right">
+                      <div className="text-right fade-in-out">
                         <h1 className="text-warna2 md:text-2xl lg:text-4xl xl:text-5xl font-bold">
                           My
                         </h1>
@@ -325,13 +326,13 @@ class Content4 extends Component {
                       </div>
 
                       <div class="cardPortof rounded-2xl overflow-hidden -bottom-24">
-                        <img
-                          class="w-lg"
-                          src={SMPBPS}
-                          alt="Sunset in the mountains"
-                        />
+                        <div class="w-lg inProcessCard flex justify-center items-center">
+                          <p className="text-lg">Coming Soon!</p>
+                        </div>
                         <div class="captionPortof  pt-32">
-                          <p class="text-warna2 textCaption">Haii nama saya</p>
+                          <p class="textCaption font-semibold text-2xl text-sky-400">
+                            Project in Process
+                          </p>
                         </div>
                       </div>
                     </div>

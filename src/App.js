@@ -4,6 +4,8 @@ import "./assets/css/global.css";
 import "./assets/css/buttoncv.css";
 import "./assets/css/icon.css";
 import "./assets/css/about.css";
+import "./assets/css/loading.css";
+
 import About from "./components/About/About";
 
 function App() {
