@@ -11,8 +11,16 @@ import {
   TailwindLogo,
   AgileMethodLogo,
   FigmaLogo,
+  ExpressLogo,
+  MidtransLogo,
 } from "../../assets/images/Skill";
-import { Mayastik, Shoesnarian, SMPBPS } from "../../assets/images/Portof";
+import {
+  Mayastik,
+  Oktashoes,
+  PortofolioWeb,
+  Shoesnarian,
+  SMPBPS,
+} from "../../assets/images/Portof";
 
 class Content4 extends Component {
   render() {
@@ -60,44 +68,152 @@ class Content4 extends Component {
                       </div>
 
                       <div class="cardPortof rounded-2xl overflow-hidden -bottom-24">
-                        <img
-                          class="w-lg"
-                          src={Shoesnarian}
-                          alt="Sunset in the mountains"
-                        />
-                        <div class="captionPortof  pt-32">
-                          <p class="text-warna2 textCaption">Haii nama saya</p>
-                        </div>
+                        <a
+                          href="https://shoesnarian.vercel.app/"
+                          target="_blank" // Menambahkan properti target="_blank"
+                          rel="noopener noreferrer" // Menambahkan rel="noopener noreferrer" untuk keamanan
+                        >
+                          <img
+                            class="w-lg"
+                            src={Shoesnarian}
+                            alt="Sunset in the mountains"
+                          />
+                          <div class="captionPortof pt-32">
+                            <p class="text-warna1 textCaption text-lg">
+                              <label className="font-normal text-warna2 ">
+                                |
+                              </label>{" "}
+                              Shoesnarian.
+                            </p>
+                            <p class="text-warna3 textCaption2 text-sm">
+                              E-Commerce Web App
+                            </p>
+                            <img
+                              className="techStack"
+                              src={BootstrapLogo}
+                              alt="ReactJS "
+                              style={{ width: "8%" }}
+                            />
+                            <img
+                              className="techStack2"
+                              src={ReactLogo}
+                              alt="Bootstrap"
+                              style={{ width: "7%" }}
+                            />
+                            <img
+                              className="techStack3"
+                              src={ExpressLogo}
+                              alt="Express.js"
+                              style={{ width: "6.5%" }}
+                            />
+                            <img
+                              className="techStack4"
+                              src={MySQLLogo}
+                              alt="MySQL"
+                              style={{ width: "12%" }}
+                            />
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
                   {/*  */}
                   {/* max-w-md lg:max-w-lg*/}
-                  <div class="col-span-2 flex justify-center ">
+                  <div class="col-span-2 flex justify-end ">
                     {/* Card */}
                     <div class="cardPortof rounded-xl overflow-hidden">
-                      <img
-                        class="w-full"
-                        src={SMPBPS}
-                        alt="Sunset in the mountains"
-                      />
-                      <div class="captionPortof  pt-32">
-                        <p class="text-warna2 textCaption">Haii nama saya</p>
-                      </div>
+                      <a
+                        href="https://admin-edupaysmkm.netlify.app/login"
+                        target="_blank" // Menambahkan properti target="_blank"
+                        rel="noopener noreferrer" // Menambahkan rel="noopener noreferrer" untuk keamanan
+                      >
+                        <img
+                          class="w-full"
+                          src={SMPBPS}
+                          alt="Sunset in the mountains"
+                        />
+                        <div class="captionPortof pt-32">
+                          <p class="text-warna1 textCaption text-lg">
+                            <label className="font-normal text-warna2 ">
+                              |
+                            </label>{" "}
+                            Sistem Manajemen Pembayaran
+                          </p>
+                          <p class="text-warna3 textCaption2 text-sm">
+                            Payment Web App & Mobile App
+                          </p>
+                          <img
+                            className="techStack"
+                            src={BootstrapLogo}
+                            alt="Bootstrap "
+                            style={{ width: "8%" }}
+                          />
+                          <img
+                            className="techStack2"
+                            src={ReactLogo}
+                            alt="React JS, React Native"
+                            style={{ width: "7%" }}
+                          />
+                          <img
+                            className="techStack3"
+                            src={FirebaseLogo}
+                            alt="Firebase"
+                            style={{ width: "5.3%" }}
+                          />
+                          <img
+                            className="techStack5"
+                            src={MidtransLogo}
+                            alt="Midtrans"
+                            style={{ width: "15%" }}
+                          />
+                        </div>
+                      </a>
                     </div>
                   </div>
                   {/* max-w-md lg:max-w-lg*/}
                   <div class="row-span-2 col-span-2 flex justify-center ">
                     {/* Card */}
                     <div class="cardPortof rounded-2xl overflow-hidden">
-                      <img
-                        class="w-full"
-                        src={Mayastik}
-                        alt="Sunset in the mountains"
-                      />
-                      <div class="captionPortof  pt-32">
-                        <p class="text-warna2 textCaption">Haii nama saya</p>
-                      </div>
+                      <a
+                        href="https://mayastik-restaurant.netlify.app/"
+                        target="_blank" // Menambahkan properti target="_blank"
+                        rel="noopener noreferrer" // Menambahkan rel="noopener noreferrer" untuk keamanan
+                      >
+                        <img
+                          class="w-full"
+                          src={Mayastik}
+                          alt="Sunset in the mountains"
+                        />
+                        <div class="captionPortof pt-32">
+                          <p class="text-warna1 textCaption text-lg">
+                            <label className="font-normal text-warna2 ">
+                              |
+                            </label>{" "}
+                            Mayastik
+                          </p>
+                          <p class="text-warna3 textCaption2 text-sm">
+                            Restaurant Web App
+                          </p>
+                          <img
+                            className="techStack"
+                            src={BootstrapLogo}
+                            alt="Bootstrap "
+                            style={{ width: "8%" }}
+                          />
+                          <img
+                            className="techStack2"
+                            src={ReactLogo}
+                            alt="React"
+                            style={{ width: "7%" }}
+                          />
+                          <img
+                            className="techStack3"
+                            src={FirebaseLogo}
+                            alt="Firebase"
+                            style={{ width: "5.3%" }}
+                          />
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -113,28 +229,86 @@ class Content4 extends Component {
                   <div class="col-span-2 flex justify-center ">
                     {/* Card */}
                     <div class="cardPortof rounded-xl overflow-hidden">
-                      <img
-                        class="w-full"
-                        src={Mayastik}
-                        alt="Sunset in the mountains"
-                      />
-                      <div class="captionPortof  pt-32">
-                        <p class="text-warna2 textCaption">Haii nama saya</p>
-                      </div>
+                      <a
+                        href="https://mayastik-restaurant.netlify.app/"
+                        target="_blank" // Menambahkan properti target="_blank"
+                        rel="noopener noreferrer" // Menambahkan rel="noopener noreferrer" untuk keamanan
+                      >
+                        <img
+                          class="w-full"
+                          src={PortofolioWeb}
+                          alt="Sunset in the mountains"
+                        />
+                        <div class="captionPortof pt-32">
+                          <p class="text-warna1 textCaption text-lg">
+                            <label className="font-normal text-warna2 ">
+                              |
+                            </label>{" "}
+                            Personal Portfolio
+                          </p>
+                          <p class="text-warna3 textCaption2 text-sm">
+                            Web App
+                          </p>
+                          <img
+                            className="techStack6"
+                            src={TailwindLogo}
+                            alt="Bootstrap "
+                            style={{ width: "8%" }}
+                          />
+                          <img
+                            className="techStack2"
+                            src={ReactLogo}
+                            alt="React"
+                            style={{ width: "7%" }}
+                          />
+                        </div>
+                      </a>
                     </div>
                   </div>
                   {/* max-w-md lg:max-w-lg*/}
                   <div class="row-span-2 col-span-2 flex justify-center ">
                     {/* Card */}
                     <div class="cardPortof rounded-2xl overflow-hidden">
-                      <img
-                        class="w-full"
-                        src={Shoesnarian}
-                        alt="Sunset in the mountains"
-                      />
-                      <div class="captionPortof  pt-32">
-                        <p class="text-warna2 textCaption">Haii nama saya</p>
-                      </div>
+                      <a
+                        href="https://oktashoes-react.netlify.app/"
+                        target="_blank" // Menambahkan properti target="_blank"
+                        rel="noopener noreferrer" // Menambahkan rel="noopener noreferrer" untuk keamanan
+                      >
+                        <img
+                          class="w-full"
+                          src={Oktashoes}
+                          alt="Sunset in the mountains"
+                        />
+                        <div class="captionPortof pt-32">
+                          <p class="text-warna1 textCaption text-lg">
+                            <label className="font-normal text-warna2 ">
+                              |
+                            </label>{" "}
+                            Oktashoes.
+                          </p>
+                          <p class="text-warna3 textCaption2 text-sm">
+                            E-Commerce Web App
+                          </p>
+                          <img
+                            className="techStack"
+                            src={BootstrapLogo}
+                            alt="Bootstrap "
+                            style={{ width: "8%" }}
+                          />
+                          <img
+                            className="techStack2"
+                            src={ReactLogo}
+                            alt="React"
+                            style={{ width: "7%" }}
+                          />
+                          <img
+                            className="techStack3"
+                            src={FirebaseLogo}
+                            alt="Firebase"
+                            style={{ width: "5.3%" }}
+                          />
+                        </div>
+                      </a>
                     </div>
                   </div>
                   {/* max-w-md lg:max-w-lg*/}

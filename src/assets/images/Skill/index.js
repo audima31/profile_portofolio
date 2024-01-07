@@ -11,6 +11,7 @@ import ReactLogo from "./React.png";
 import TailwindLogo from "./Tailwind.png";
 import AgileMethodLogo from "./AgileMethodLogo.png";
 import FigmaLogo from "./Figma.png";
+import MidtransLogo from "./MidtransLogo.png";
 
 export {
   HTMLLogo,
@@ -26,4 +27,5 @@ export {
   TailwindLogo,
   AgileMethodLogo,
   FigmaLogo,
+  MidtransLogo,
 };
