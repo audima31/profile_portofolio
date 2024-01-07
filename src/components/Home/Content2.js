@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import CV from "../../assets/file/CV.pdf";
 class Content2 extends Component {
   render() {
     return (
@@ -19,7 +19,11 @@ class Content2 extends Component {
         </div>
 
         <div className="flex justify-center mt-10">
-          <button class="scrollBottom text-xs font-normal">DOWNLOAD CV</button>
+          <a href={CV} download="CV - Audima Oktasena">
+            <button class="scrollBottom text-xs font-normal">
+              DOWNLOAD CV
+            </button>
+          </a>
         </div>
 
         {/* Scema No 2 */}

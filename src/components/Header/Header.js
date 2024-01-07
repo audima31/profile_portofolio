@@ -143,9 +143,9 @@ export default function Header() {
         className=" flex items-center justify-start p-4 pb-8 lg:px-8"
         aria-label="Global"
       >
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
+        <Popover.Group className="hidden md:flex lg:gap-x-12">
           <h1
-            className="logo font-semibold italic text-3xl underline"
+            className="logo font-semibold italic md:text-xl lg:text-3xl underline"
             style={{ color: "#323030" }}
           >
             AO

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import foto from "../../assets/images/Untitled-233.png";
+
 import {
   HTMLLogo,
   BootstrapLogo,

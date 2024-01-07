@@ -69,3 +69,43 @@ html,body {
     border-color: #72c1e8;
     transform: translateX(-50%) ;
   }
+
+
+  .cardPortof{
+    width: 27rem;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .cardPortof:hover{
+    /* box-shadow: -10px 8px 12px rgb(255, 6, 197); */
+  }
+
+  .captionPortof {
+    position: absolute;
+    bottom: 0px;
+    text-align: end;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .cardPortof:hover .captionPortof {
+    opacity: 0.8;
+    background: conic-gradient(at right top, rgb(55, 65, 81), rgb(12, 36, 70), rgb(0, 0, 0))
+  }
+
+.textCaption{
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  transition: bottom 0.5s ease-in-out, left 0.3s ease-in-out;
+}
+  
+.cardPortof:hover .captionPortof .textCaption {
+  bottom: 100px;
+  left: 50px;
+}

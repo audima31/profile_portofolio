@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import foto1 from "../../assets/images/FotoProfile1.png";
-import foto2 from "../../assets/images/Group 19 (1).png";
+import foto2 from "../../assets/images/FotoProfile4.png";
+import foto3 from "../../assets/images/Group 19 (2).png";
 
 class content1 extends Component {
   componentDidMount() {
@@ -108,9 +109,13 @@ class content1 extends Component {
               <img src={foto2} alt="" />
             </div>
 
+            <div className="z-10 hidden sm:block md:hidden lg:hidden 2xl:hidden mt-3">
+              <img src={foto3} alt="" />
+            </div>
+
             <div className="text-right text-warna1">
-              <h1 className="text-4xl">2 Years</h1>
-              <h3 className="text-2xl">Experience</h3>
+              <h1 className="md:text-2xl lg:text-4xl">2 Years</h1>
+              <h3 className="md:text-lg lg:text-2xl">Experience</h3>
             </div>
           </div>
         </div>
