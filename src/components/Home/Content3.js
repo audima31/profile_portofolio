@@ -16,7 +16,7 @@ import {
 class Content3 extends Component {
   render() {
     return (
-      <div className="container mx-auto w-3/4 lg:w-4/5  mt-36">
+      <div className="container mx-auto w-3/4 lg:w-4/5 mt-36">
         <p className="text-center font-semibold text-3xl sm:text-5xl md:text-6xl text-warna2 fade-in-out">
           Skills
         </p>

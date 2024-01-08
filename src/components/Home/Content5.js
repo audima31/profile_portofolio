@@ -4,119 +4,53 @@ import { Shoesnarian } from "../../assets/images/Portof";
 class Content5 extends Component {
   render() {
     return (
-      <div className="mt-36 mb-64">
-        <div className="z-20 relative left-52">
-          <h1 className="text-warna2 md:text-2xl lg:text-4xl xl:text-5xl font-bold">
-            My
-          </h1>
-          <h1 className="text-warna1 md:text-3xl lg:text-5xl xl:text-6xl font-bold">
-            Projects<label className="text-warna2">.</label>
-          </h1>
-        </div>
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators -bottom-16">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            {/* <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button> */}
+      <div className="container mx-auto w-3/4 lg:w-4/5 mt-44 mb-24">
+        <p className="text-center font-semibold text-2xl sm:text-4xl md:text-5xl text-warna2 fade-in-out">
+          Contact Me
+        </p>
+        <p className="text-center mt-4 2xl:text-lg text-warna3 lg:px-28 xl:px-60 2xl:px-96 leading-relaxed">
+          Thank you for visiting my portfolio, feel free to contact me through
+          the provided contact information below. I look forward to the
+          opportunity to discuss further!
+        </p>
+
+        <div class="grid text-center grid-cols-3 gap-4 mt-16 ">
+          <div>
+            <a
+              href="https://wa.me/081285034617"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="bi bi-whatsapp text-4xl"
+                style={{ color: "#25D366" }}
+              ></i>
+            </a>
+            <p className="text-warna3 mt-2">+62 812-8503-4617</p>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div>
-                {/* items-center */}
-                <div class="grid  grid-flow-col gap-y-4 gap-x-4 flex justify-center">
-                  {/* max-w-md lg:max-w-lg*/}
-                  <div class="row-span-3 flex justify-center">
-                    {/* Card */}
-                    <div class="cardPortof rounded-2xl overflow-hidden -bottom-24">
-                      <img
-                        class="w-lg"
-                        src={Shoesnarian}
-                        alt="Sunset in the mountains"
-                      />
-                      <div class="captionPortof  pt-32">
-                        <p class="text-warna2 textCaption">Haii nama saya</p>
-                      </div>
-                    </div>
-                  </div>
-                  {/*  */}
-                  {/* max-w-md lg:max-w-lg*/}
-                  <div class="col-span-2 flex justify-center ">
-                    {/* Card */}
-                    <div class="cardPortof rounded-xl overflow-hidden">
-                      <img
-                        class="w-full"
-                        src={Shoesnarian}
-                        alt="Sunset in the mountains"
-                      />
-                      <div class="captionPortof  pt-32">
-                        <p class="text-warna2 textCaption">Haii nama saya</p>
-                      </div>
-                    </div>
-                  </div>
-                  {/* max-w-md lg:max-w-lg*/}
-                  <div class="row-span-2 col-span-2 flex justify-center ">
-                    {/* Card */}
-                    <div class="cardPortof rounded-2xl overflow-hidden">
-                      <img
-                        class="w-full"
-                        src={Shoesnarian}
-                        alt="Sunset in the mountains"
-                      />
-                      <div class="captionPortof  pt-32">
-                        <p class="text-warna2 textCaption">Haii nama saya</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="grid grid-rows-2 grid-cols-2">
-                <div class="bg-blue-500 p-4">1</div>
-                <div class="bg-green-500 p-4">2</div>
-                <div class="bg-red-500 p-4">3</div>
-                <div class="bg-yellow-500 p-4">4</div>
-                <div class="bg-purple-500 p-4">5</div>
-                <div class="bg-orange-500 p-4">6</div>
-              </div>
-            </div>
-            {/* <div class="carousel-item">
-              <img src={HTMLLogo} class="d-block w-25" alt="..." />
-            </div> */}
+          <div>
+            <a href="#">
+              <i
+                class="bi bi-envelope text-4xl"
+                style={{ color: "#F4B400" }}
+              ></i>
+            </a>
+            <p className="text-warna3 mt-2">audimasena@gmail.com</p>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-          </button>
-          <button
-            class="carousel-control-next "
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
+          <div>
+            <a
+              href="https://www.instagram.com/audima31/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="bi bi-instagram text-4xl"
+                style={{ color: "#E1306C" }}
+              ></i>
+            </a>
+
+            <p className="text-warna3 mt-2">@audima31</p>
+          </div>
         </div>
       </div>
     );

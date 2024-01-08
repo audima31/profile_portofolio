@@ -15,7 +15,7 @@ class Home extends Component {
         <Content2 />
         <Content3 />
         <Content4 />
-        {/* <Content5 /> */}
+        <Content5 />
       </div>
     );
   }

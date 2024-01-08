@@ -5,7 +5,7 @@ class Content2 extends Component {
     return (
       <div className="container mx-auto mt-16 w-3/4 lg:w-3/5 ">
         <div>
-          <p className="lg:text-text-sm xl:text-md 2xl:text-lg text-warna3 text-justify font-light leading-loose">
+          <p className="xl:text-md 2xl:text-lg text-warna3 text-justify font-light leading-loose">
             A graduate with a Bachelor's degree in Information Technology from
             Brawijaya University. I have a strong interest in launching my
             career in Information Technology, particularly in Front-End
@@ -19,7 +19,12 @@ class Content2 extends Component {
         </div>
 
         <div className="flex justify-center mt-10">
-          <a href={CV} download="CV - Audima Oktasena">
+          <a
+            href="https://drive.google.com/file/d/1FEZ_NZmSz-5rEuVdMQ-IPW95i1ad9onK/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            // href={CV} download="CV - Audima Oktasena"
+          >
             <button class="scrollBottom text-xs font-normal">
               DOWNLOAD CV
             </button>

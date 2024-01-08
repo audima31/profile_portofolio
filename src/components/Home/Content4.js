@@ -26,7 +26,7 @@ import {
 class Content4 extends Component {
   render() {
     return (
-      <div className="mb-64 mt-60">
+      <div className="mt-60">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators -bottom-16">
             <button
@@ -134,11 +134,11 @@ class Content4 extends Component {
                           alt="Sunset in the mountains"
                         />
                         <div class="captionPortof pt-32">
-                          <p class="text-warna1 textCaption text-lg">
+                          <p class="text-warna1 textCaption text-base">
                             <label className="font-normal text-warna2 ">
                               |
                             </label>{" "}
-                            Sistem Manajemen Pembayaran
+                            Pembayaran SPP Muhammadiyah Cilegon
                           </p>
                           <p class="text-warna3 textCaption2 text-sm">
                             Invoice Management Web App & Mobile App

@@ -34,7 +34,7 @@ class content1 extends Component {
           <div className="flex items-center justify-center mt-2 ">
             <div className="text-left text-warna1">
               {/* Github */}
-              <div className="test relative z-20 left-40">
+              <div className="test relative z-20 left-48">
                 <a
                   class="social-link2"
                   href="https://github.com/audima31"
@@ -52,7 +52,7 @@ class content1 extends Component {
                 </a>
               </div>
 
-              <div className="test relative z-20 mt-5 mb-10 left-20">
+              <div className="test relative z-20 mt-4 mb-16 left-20">
                 <a
                   class="social-link4"
                   href="https://www.linkedin.com/in/audimaoktasena/"
@@ -70,7 +70,7 @@ class content1 extends Component {
                 </a>
               </div>
 
-              <div className="test z-20 relative mt-8 left-8">
+              <div className="test z-20 relative mt-8 left-4">
                 <a
                   class="social-link1"
                   href="https://www.instagram.com/audima31/"
