@@ -80,7 +80,7 @@ class Content4 extends Component {
                             alt="Sunset in the mountains"
                           />
                           <div class="captionPortof pt-32">
-                            <p class="text-warna1 textCaption text-lg">
+                            <p class="text-warna1 textCaption text-lg font-medium">
                               <label className="font-normal text-warna2 ">
                                 |
                               </label>{" "}
@@ -134,11 +134,11 @@ class Content4 extends Component {
                           alt="Sunset in the mountains"
                         />
                         <div class="captionPortof pt-32">
-                          <p class="text-warna1 textCaption text-base">
+                          <p class="text-warna1 textCaption text-sm font-medium">
                             <label className="font-normal text-warna2 ">
                               |
                             </label>{" "}
-                            Pembayaran SPP Muhammadiyah Cilegon
+                            Pembayaran SPP SMK Muhammadiyah Cilegon
                           </p>
                           <p class="text-warna3 textCaption2 text-sm">
                             Invoice Management Web App & Mobile App
@@ -186,7 +186,7 @@ class Content4 extends Component {
                           alt="Sunset in the mountains"
                         />
                         <div class="captionPortof pt-32">
-                          <p class="text-warna1 textCaption text-lg">
+                          <p class="text-warna1 textCaption text-lg font-medium">
                             <label className="font-normal text-warna2 ">
                               |
                             </label>{" "}
@@ -241,7 +241,7 @@ class Content4 extends Component {
                           alt="Sunset in the mountains"
                         />
                         <div class="captionPortof pt-32">
-                          <p class="text-warna1 textCaption text-lg">
+                          <p class="text-warna1 textCaption text-lg font-medium">
                             <label className="font-normal text-warna2 ">
                               |
                             </label>{" "}
@@ -281,7 +281,7 @@ class Content4 extends Component {
                           alt="Sunset in the mountains"
                         />
                         <div class="captionPortof pt-32">
-                          <p class="text-warna1 textCaption text-lg">
+                          <p class="text-warna1 textCaption text-lg font-medium">
                             <label className="font-normal text-warna2 ">
                               |
                             </label>{" "}
@@ -330,7 +330,7 @@ class Content4 extends Component {
                           <p className="text-lg">Coming Soon!</p>
                         </div>
                         <div class="captionPortof  pt-32">
-                          <p class="textCaption font-semibold text-2xl text-sky-400">
+                          <p class="textCaption font-medium text-2xl text-sky-400">
                             Project in Process
                           </p>
                         </div>
