@@ -114,7 +114,7 @@ class content1 extends Component {
             </div>
 
             <div className="text-right text-warna1">
-              <h1 className="md:text-2xl lg:text-4xl">2 Years</h1>
+              <h1 className="md:text-2xl lg:text-4xl">1 Years</h1>
               <h3 className="md:text-lg lg:text-2xl">Experience</h3>
             </div>
           </div>

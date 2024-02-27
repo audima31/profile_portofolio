@@ -16,6 +16,7 @@ import {
 } from "../../assets/images/Skill";
 import {
   ComingSoon,
+  Datacakra,
   Mayastik,
   Oktashoes,
   PortofolioWeb,
@@ -124,7 +125,7 @@ class Content4 extends Component {
                     {/* Card */}
                     <div class="cardPortof rounded-xl overflow-hidden">
                       <a
-                        href="https://admin-edupaysmkm.netlify.app/login"
+                        href="https://drive.google.com/drive/u/1/folders/1r24SOSDQ0bleaYF0G0H-b-44grnpVWNS"
                         target="_blank" // Menambahkan properti target="_blank"
                         rel="noopener noreferrer" // Menambahkan rel="noopener noreferrer" untuk keamanan
                       >
@@ -312,9 +313,59 @@ class Content4 extends Component {
                       </a>
                     </div>
                   </div>
-                  {/* max-w-md lg:max-w-lg*/}
+
                   <div class="row-span-3 flex justify-center">
-                    {/* Card */}
+                    <div>
+                      <div className="text-right fade-in-out">
+                        <h1 className="text-warna2 md:text-2xl lg:text-4xl xl:text-5xl font-bold">
+                          My
+                        </h1>
+                        <h1 className="text-warna1 md:text-3xl lg:text-5xl xl:text-6xl font-bold underline">
+                          Projects<label className="text-warna2">.</label>
+                        </h1>
+                      </div>
+
+                      <div class="cardPortof rounded-2xl overflow-hidden -bottom-24">
+                        <a
+                          href="https://biroperjalanan-datacakra-audima.netlify.app/login"
+                          target="_blank" // Menambahkan properti target="_blank"
+                          rel="noopener noreferrer" // Menambahkan rel="noopener noreferrer" untuk keamanan
+                        >
+                          <img
+                            class="w-lg"
+                            src={Datacakra}
+                            alt="Sunset in the mountains"
+                          />
+                          <div class="captionPortof pt-32">
+                            <p class="text-warna1 textCaption text-lg font-medium">
+                              <label className="font-normal text-warna2 ">
+                                |
+                              </label>{" "}
+                              Biro Perjalanan.
+                            </p>
+                            <p class="text-warna3 textCaption2 text-sm">
+                              Admin Biro Perjalanan Web
+                            </p>
+                            <img
+                              className="techStack"
+                              src={BootstrapLogo}
+                              alt="ReactJS "
+                              style={{ width: "8%" }}
+                            />
+                            <img
+                              className="techStack2"
+                              src={ReactLogo}
+                              alt="Bootstrap"
+                              style={{ width: "7%" }}
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Comming soon */}
+                  {/* <div class="row-span-3 flex justify-center">
                     <div>
                       <div className="text-right fade-in-out">
                         <h1 className="text-warna2 md:text-2xl lg:text-4xl xl:text-5xl font-bold">
@@ -336,7 +387,7 @@ class Content4 extends Component {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
