@@ -191,7 +191,7 @@ class Content4 extends Component {
                             <label className="font-normal text-warna2 ">
                               |
                             </label>{" "}
-                            Mayastik
+                            Maystik
                           </p>
                           <p class="text-warna3 textCaption2 text-sm">
                             Restaurant Web App

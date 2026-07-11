@@ -49,7 +49,7 @@ export const projects = [
     mark: "B",
   },
   {
-    title: "Mayastik",
+    title: "Maystik",
     type: "Restaurant web experience",
     summary:
       "A warm restaurant experience designed to turn menu discovery into a more inviting digital moment.",
