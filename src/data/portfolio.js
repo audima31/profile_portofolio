@@ -1,58 +1,76 @@
-import Datacakra from "../assets/images/Portof/DataCakra.png";
-import Mayastik from "../assets/images/Portof/Mayastik.png";
-import Oktashoes from "../assets/images/Portof/Oktashoes.png";
-import PortofolioWeb from "../assets/images/Portof/PortofolioWeb.png";
-import Shoesnarian from "../assets/images/Portof/Shoesnarian.png";
-import SMPBPS from "../assets/images/Portof/SMPBPS.png";
-
 export const projects = [
+  {
+    title: "Portomoo",
+    type: "Photographer service management",
+    summary:
+      "A focused digital workspace for managing photographer services and day-to-day operations.",
+    accent: "#cfff3d",
+    surface: "#12120f",
+    href: "https://dev.portomoo.com",
+    stack: ["NextJS"],
+    slug: "portomoo",
+    mark: "P",
+    featured: true,
+  },
   {
     title: "SPP Digital",
     type: "Invoice management ecosystem",
+    summary:
+      "A connected invoice and payment experience spanning administrative and mobile surfaces.",
     accent: "#ffc857",
-    image: SMPBPS,
+    surface: "#ffc857",
     href: "https://drive.google.com/drive/u/1/folders/1r24SOSDQ0bleaYF0G0H-b-44grnpVWNS",
     stack: ["React Native", "Firebase", "Midtrans"],
+    slug: "spp",
+    mark: "SPP",
   },
   {
     title: "Shoesnarian",
     type: "E-commerce platform",
+    summary:
+      "A product-led footwear storefront shaped around discovery, selection, and a direct shopping journey.",
     accent: "#90e4ff",
-    image: Shoesnarian,
+    surface: "#90e4ff",
     href: "https://shoesnarian.vercel.app/",
     stack: ["React", "Express", "MySQL"],
+    slug: "shoesnarian",
+    mark: "S",
   },
   {
     title: "Biro Perjalanan",
     type: "Travel operations dashboard",
+    summary:
+      "An operational dashboard that brings travel administration into one clear, structured flow.",
     accent: "#53d1b6",
-    image: Datacakra,
+    surface: "#53d1b6",
     href: "https://biroperjalanan-datacakra-audima.netlify.app/login",
     stack: ["React", "Bootstrap"],
+    slug: "travel",
+    mark: "B",
   },
   {
     title: "Mayastik",
     type: "Restaurant web experience",
+    summary:
+      "A warm restaurant experience designed to turn menu discovery into a more inviting digital moment.",
     accent: "#ff8b64",
-    image: Mayastik,
+    surface: "#ff8b64",
     href: "https://mayastik-restaurant.netlify.app/",
     stack: ["React", "Bootstrap", "Firebase"],
+    slug: "mayastik",
+    mark: "M",
   },
   {
     title: "Oktashoes",
     type: "Footwear commerce experience",
+    summary:
+      "A focused commerce interface for browsing footwear and moving confidently toward purchase.",
     accent: "#ff7a45",
-    image: Oktashoes,
+    surface: "#ff7a45",
     href: "https://oktashoes-react.netlify.app/",
     stack: ["React", "Firebase", "Bootstrap"],
-  },
-  {
-    title: "Portfolio V1",
-    type: "Personal portfolio",
-    accent: "#b8a1ff",
-    image: PortofolioWeb,
-    href: "https://github.com/audima31",
-    stack: ["React", "Tailwind CSS"],
+    slug: "oktashoes",
+    mark: "O",
   },
 ];
 
@@ -182,7 +200,7 @@ export const profile = {
   heroStatement:
     "Junior Programmer at PT Bank Raya Indonesia Tbk. building digital banking interfaces, savings journeys, and transaction features across Flutter and Next.js products.",
   aboutLead:
-    "I am Audima Oktasena S.Kom. a Junior Programmer at PT Bank Raya Indonesia Tbk.",
+    "I am Audima Oktasena, S.Kom. a Junior Programmer at PT Bank Raya Indonesia Tbk.",
   aboutNotes: [
     "My work combines Flutter and Next JS with cross-functional collaboration across Product, UI/UX, QA, and Backend teams.",
     "I graduated from Universitas Brawijaya in Information Technology with a 3.68 GPA, completed the BRILiaN Future Leader Program, and continue to grow through agile, risk, and frontend engineering certifications.",
@@ -210,7 +228,7 @@ export const contact = {
   email: "audimasena@gmail.com",
   emailHref: "mailto:audimasena@gmail.com",
   prompt: "Have a meaningful project in mind?",
-  location: "Jakarta / GMT +7",
+  location: "Jakarta, Indonesia",
   kicker: "Let's talk about what comes next.",
   headline: ["Build something", "people can trust."],
   footer: "Audima Oktasena / Portfolio 2026",

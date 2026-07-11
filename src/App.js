@@ -6,7 +6,7 @@ import {
   EnvelopeIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import profilePhoto from "./assets/images/FotoProfile1.png";
+import profilePhoto from "./assets/images/FotoBaru.png";
 import {
   certifications,
   contact,
@@ -35,8 +35,6 @@ const marqueeWords = [
   "React Native",
   "Agile Methodology",
 ];
-
-const projectPointerStates = new WeakMap();
 
 function ArrowLink({ href, children, className = "", download = false }) {
   const isExternal = /^https?:\/\//.test(href);
@@ -196,7 +194,7 @@ function Header({ menuOpen, setMenuOpen }) {
           onKeyDown={trapMenuFocus}
         >
           <div className="mobile-menu__topline">
-            <span>Navigation / Portfolio 2026</span>
+            <span>Audima Oktasena / Portfolio 2026</span>
             <button
               type="button"
               aria-label="Close navigation menu"
@@ -232,6 +230,8 @@ function Header({ menuOpen, setMenuOpen }) {
 }
 
 function Hero() {
+  const [introOpen, setIntroOpen] = useState(true);
+
   return (
     <section className="hero" id="top" aria-labelledby="hero-title">
       <div className="hero-grid" aria-hidden="true" />
@@ -250,34 +250,74 @@ function Hero() {
         </span>
       </h1>
 
-      <div className="hero-copy hero-intro hero-intro--3">
-        <span className="hero-copy__marker">✦</span>
-        <p>{profile.heroStatement}</p>
-        <ArrowLink href="#projects">Explore selected projects</ArrowLink>
+      <div
+        className={`hero-copy hero-intro hero-intro--3 ${
+          introOpen ? "is-open" : "is-closed"
+        }`}
+      >
+        <button
+          className="hero-copy__toggle"
+          type="button"
+          id="hero-introduction-toggle"
+          aria-expanded={introOpen}
+          aria-controls="hero-introduction"
+          onClick={() => setIntroOpen((open) => !open)}
+        >
+          <span>
+            <i aria-hidden="true">✦</i>
+            Role snapshot
+          </span>
+          <span className="hero-copy__toggle-icon" aria-hidden="true">
+            <i />
+            <i />
+          </span>
+        </button>
+
+        <div
+          className="hero-copy__panel"
+          id="hero-introduction"
+          role="region"
+          aria-labelledby="hero-introduction-toggle"
+          aria-hidden={!introOpen}
+          {...(!introOpen ? { inert: "" } : {})}
+        >
+          <div className="hero-copy__panel-inner">
+            <p>{profile.heroStatement}</p>
+            <ArrowLink href="#projects">Explore selected projects</ArrowLink>
+          </div>
+        </div>
       </div>
 
-      <figure className="hero-portrait hero-intro hero-intro--2">
-        <div className="hero-portrait__shape" aria-hidden="true">
-          <span>A/O</span>
-        </div>
-        <img
-          src={profilePhoto}
-          alt="Audima Oktasena"
-          width="933"
-          height="702"
-          decoding="async"
-          fetchpriority="high"
+      <figure className="hero-portrait">
+        <div
+          className="hero-portrait__shape hero-intro hero-intro--2"
+          aria-hidden="true"
         />
-        <figcaption>
+        <div className="hero-portrait__person hero-intro hero-intro--2">
+          <img
+            src={profilePhoto}
+            alt="Audima Oktasena"
+            width="3413"
+            height="5120"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+        <figcaption className="hero-intro hero-intro--3">
           <span>Junior Programmer,</span>
           <strong>PT Bank Raya Indonesia Tbk.</strong>
         </figcaption>
       </figure>
 
       <div className="hero-stamp hero-intro hero-intro--4" aria-hidden="true">
-        <span>PRODUCT</span>
-        <span>CODE</span>
-        <span>PEOPLE</span>
+        <div className="hero-stamp__orbit">
+          <span>PRODUCT</span>
+          <span>CODE</span>
+          <span>PEOPLE</span>
+        </div>
+        <i className="hero-stamp__ring hero-stamp__ring--outer" />
+        <i className="hero-stamp__ring hero-stamp__ring--inner" />
+        <i className="hero-stamp__satellite" />
         <b>+</b>
       </div>
 
@@ -291,8 +331,8 @@ function Hero() {
           <strong>Web + Mobile</strong>
         </div>
         <div>
-          <span>Timezone</span>
-          <strong>{profile.timezone}</strong>
+          <span>Location</span>
+          <strong>{profile.location}</strong>
         </div>
         <a href="#about" aria-label="Scroll to profile">
           <ArrowDownIcon aria-hidden="true" />
@@ -329,10 +369,10 @@ function About() {
       aria-labelledby="about-title"
     >
       <div className="about-heading" data-reveal="left">
-        <SectionLabel index="01">Profile / Approach</SectionLabel>
+        <SectionLabel index="01">Profile</SectionLabel>
         <h2 id="about-title">
-          Clear interfaces for
-          <em> complex systems.</em>
+          Who
+          <em> I am?</em>
         </h2>
       </div>
 
@@ -361,47 +401,6 @@ function About() {
   );
 }
 
-function handleProjectPointer(event) {
-  if (event.pointerType && event.pointerType !== "mouse") return;
-  if (window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches) return;
-
-  const card = event.currentTarget;
-  const state = projectPointerStates.get(card) || {
-    frame: 0,
-    rect: card.getBoundingClientRect(),
-  };
-
-  state.clientX = event.clientX;
-  state.clientY = event.clientY;
-
-  if (!state.frame) {
-    state.frame = window.requestAnimationFrame(() => {
-      const x = (state.clientX - state.rect.left) / state.rect.width - 0.5;
-      const y = (state.clientY - state.rect.top) / state.rect.height - 0.5;
-
-      card.style.setProperty("--tilt-x", `${(-y * 5).toFixed(2)}deg`);
-      card.style.setProperty("--tilt-y", `${(x * 6).toFixed(2)}deg`);
-      card.style.setProperty("--spot-x", `${((x + 0.5) * 100).toFixed(1)}%`);
-      card.style.setProperty("--spot-y", `${((y + 0.5) * 100).toFixed(1)}%`);
-      state.frame = 0;
-    });
-  }
-
-  projectPointerStates.set(card, state);
-}
-
-function resetProjectPointer(event) {
-  const card = event.currentTarget;
-  const state = projectPointerStates.get(card);
-
-  if (state?.frame) window.cancelAnimationFrame(state.frame);
-  projectPointerStates.delete(card);
-  card.style.removeProperty("--tilt-x");
-  card.style.removeProperty("--tilt-y");
-  card.style.removeProperty("--spot-x");
-  card.style.removeProperty("--spot-y");
-}
-
 function Projects() {
   return (
     <section
@@ -413,21 +412,26 @@ function Projects() {
         <div data-reveal="left">
           <SectionLabel index="02">Selected Projects</SectionLabel>
           <h2 id="projects-title">
-            Interfaces built for
-            <em> real momentum.</em>
+            Selected
+            <em> projects.</em>
           </h2>
         </div>
         <p data-reveal="up">
-          Product explorations across commerce, operations, payments, and mobile
-          experiences—each shaped around a clear user journey.
+          Some web and mobile projects I have worked on across services,
+          payments, commerce, and operations.
         </p>
       </div>
 
-      <div className="project-grid">
+      <div className="project-showcase">
         {projects.map((project, index) => (
           <article
-            className={`project-card project-card--${index + 1}`}
-            style={{ "--accent": project.accent }}
+            className={`project-panel project-panel--${project.slug} ${
+              project.featured ? "project-panel--featured" : ""
+            }`}
+            style={{
+              "--project-accent": project.accent,
+              "--project-surface": project.surface,
+            }}
             key={project.title}
             data-reveal="up"
           >
@@ -435,36 +439,38 @@ function Projects() {
               href={project.href}
               target="_blank"
               rel="noreferrer"
-              aria-label={`View ${project.title} project`}
-              onPointerMove={handleProjectPointer}
-              onPointerLeave={resetProjectPointer}
-              onPointerCancel={resetProjectPointer}
+              aria-label={`Open ${project.title} project`}
             >
-              <div className="project-card__visual">
-                <span className="project-card__number">0{index + 1}</span>
-                <img
-                  src={project.image}
-                  alt={`${project.title} interface preview`}
-                  width="640"
-                  height="457"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <span className="project-card__open" aria-hidden="true">
-                  <ArrowUpRightIcon />
+              <div className="project-panel__topline">
+                <span>
+                  {project.featured
+                    ? "Featured / New"
+                    : `Project / 0${index + 1}`}
                 </span>
+                <span>{project.type}</span>
               </div>
 
-              <div className="project-card__meta">
-                <div>
-                  <span>{project.type}</span>
-                  <h3>{project.title}</h3>
-                </div>
+              <div className="project-panel__art" aria-hidden="true">
+                <span>{project.mark}</span>
+                <i />
+                <i />
+              </div>
+
+              <div className="project-panel__content">
+                <span className="project-panel__index">0{index + 1}</span>
+                <h3>{project.title}</h3>
+                <p>{project.summary}</p>
+              </div>
+
+              <div className="project-panel__footer">
                 <ul aria-label={`${project.title} technology stack`}>
                   {project.stack.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
+                <span className="project-panel__launch">
+                  Visit project <ArrowUpRightIcon aria-hidden="true" />
+                </span>
               </div>
             </a>
           </article>
@@ -486,12 +492,12 @@ function Experience() {
           Experience
         </SectionLabel>
         <h2 id="experience-title">
-          Product work,
-          <em> shipped with teams.</em>
+          Work
+          <em> experience.</em>
         </h2>
         <p>
-          Customer-facing interfaces in a regulated, cross-functional, and
-          fast-moving environment.
+          My professional experience in frontend development, digital banking,
+          and cross-functional product teams.
         </p>
       </div>
 
@@ -529,8 +535,8 @@ function Toolkit() {
       <div className="toolkit-heading" data-reveal="left">
         <SectionLabel index="04">Toolkit</SectionLabel>
         <h2 id="toolkit-title">
-          A practical stack for
-          <em> ambitious products.</em>
+          Tools &amp;
+          <em> technologies.</em>
         </h2>
       </div>
 
@@ -557,8 +563,8 @@ function Certifications() {
       <div className="certifications-heading" data-reveal="left">
         <SectionLabel index="05">CERTIFICATIONS</SectionLabel>
         <h2 id="certifications-title">
-          Always learning,
-          <em> always refining.</em>
+          My
+          <em> certifications.</em>
         </h2>
       </div>
 
@@ -584,15 +590,13 @@ function Leadership() {
       aria-labelledby="leadership-title"
     >
       <div className="leadership-heading" data-reveal="left">
-        <SectionLabel index="06">
-          ORGANIZATIONAL & LEADERSHIP EXPERIENCE
-        </SectionLabel>
+        <SectionLabel index="06">Organization</SectionLabel>
         <h2 id="leadership-title">
-          Culture, events,
-          <em> and leadership.</em>
+          Organization &amp;
+          <em> leadership.</em>
         </h2>
         <p>
-          Building momentum with people—across company initiatives and student
+          Activities and responsibilities from company programs and student
           organizations.
         </p>
       </div>
