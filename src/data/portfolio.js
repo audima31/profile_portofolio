@@ -129,7 +129,8 @@ export const organizationalExperience = [
   {
     period: "Feb 2022 - Feb 2023",
     role: "Internal Developer (Supervisor)",
-    organization: "Eksekutif Mahasiswa Teknologi Informasi",
+    organization:
+      "Eksekutif Mahasiswa Teknologi Informasi, Universitas Brawijaya",
     points: [
       "Served as primary supervisor and mentor across all departments of the student executive body, overseeing operational continuity and performance evaluation.",
       "Participated in formulating organizational policies in collaboration with the chairperson and vice-chairperson.",
@@ -138,7 +139,8 @@ export const organizationalExperience = [
   {
     period: "Feb 2021 - Feb 2022",
     role: "Vice Head - Social & Environment Dept",
-    organization: "Eksekutif Mahasiswa Teknologi Informasi",
+    organization:
+      "Eksekutif Mahasiswa Teknologi Informasi, Universitas Brawijaya",
     points: [
       "Supervised social and environmental programs while fostering inter-departmental cooperation with external faculty-level organizations.",
       "Led initiatives to enhance students' awareness and engagement in social action and environmental stewardship.",
@@ -147,7 +149,8 @@ export const organizationalExperience = [
   {
     period: "Feb 2020 - Feb 2021",
     role: "Staff - Social & Environment Dept",
-    organization: "Eksekutif Mahasiswa Teknologi Informasi",
+    organization:
+      "Eksekutif Mahasiswa Teknologi Informasi, Universitas Brawijaya",
     points: [
       "Planned and executed community service and social responsibility programs.",
       "Created social media content related to environmental and social awareness issues.",

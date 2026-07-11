@@ -55,7 +55,7 @@ class Content4 extends Component {
             <div class="carousel-item active">
               <div>
                 {/* items-center */}
-                <div class="grid  grid-flow-col gap-y-7 gap-x-6 flex justify-center">
+                <div class="grid  grid-flow-col gap-y-7 gap-x-6 justify-center">
                   {/* max-w-md lg:max-w-lg*/}
                   <div class="row-span-3 flex justify-center">
                     {/* Card */}
@@ -226,7 +226,7 @@ class Content4 extends Component {
             <div class="carousel-item">
               <div>
                 {/* items-center */}
-                <div class="grid grid-flow-col gap-y-7 gap-x-6 flex justify-center">
+                <div class="grid grid-flow-col gap-y-7 gap-x-6 justify-center">
                   {/* max-w-md lg:max-w-lg*/}
                   <div class="col-span-2 flex justify-center ">
                     {/* Card */}
