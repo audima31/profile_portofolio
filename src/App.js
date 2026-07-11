@@ -75,6 +75,131 @@ function LogoMark() {
   );
 }
 
+function ToolLogo({ type }) {
+  const commonProps = {
+    "aria-hidden": "true",
+    className: "tool-logo",
+    focusable: "false",
+    viewBox: "0 0 48 48",
+  };
+
+  switch (type) {
+    case "flutter":
+      return (
+        <svg {...commonProps}>
+          <path d="M29 5 8 26l7 7L43 5H29Z" />
+          <path d="m29 28-7 7 7 8h14L29 28Z" />
+          <path d="m22 21-7 7 7 7 7-7-7-7Z" />
+        </svg>
+      );
+    case "next":
+      return (
+        <svg {...commonProps}>
+          <circle cx="24" cy="24" r="18" />
+          <path d="M16 32V16h4l12 16V16" />
+          <path d="M29 31 38 42" />
+        </svg>
+      );
+    case "html":
+      return (
+        <svg {...commonProps}>
+          <path d="m10 6 3 34 11 3 11-3 3-34H10Z" />
+          <path d="M17 15h14l-.5 6H19l.4 5h10.7l-.7 7-5.4 1.5-5.4-1.5-.4-4" />
+        </svg>
+      );
+    case "css":
+      return (
+        <svg {...commonProps}>
+          <path d="m10 6 3 34 11 3 11-3 3-34H10Z" />
+          <path d="M17 15h15l-.7 6H20.2l.4 4h10.2l-.9 8-5.9 1.8-5.9-1.8-.4-4" />
+        </svg>
+      );
+    case "javascript":
+      return (
+        <svg {...commonProps}>
+          <rect x="8" y="8" width="32" height="32" />
+          <path d="M18 31c1.2 2.2 3.2 3.2 5.8 2.4V18" />
+          <path d="M29 31c1.1 2 6.3 2.2 6.3-1.1 0-4-6.9-2.2-6.9-7 0-3.5 5.1-4.2 7-1.4" />
+        </svg>
+      );
+    case "react":
+    case "react-native":
+      return (
+        <svg {...commonProps}>
+          <ellipse cx="24" cy="24" rx="18" ry="7" />
+          <ellipse cx="24" cy="24" rx="18" ry="7" transform="rotate(60 24 24)" />
+          <ellipse cx="24" cy="24" rx="18" ry="7" transform="rotate(120 24 24)" />
+          <circle cx="24" cy="24" r="3" />
+        </svg>
+      );
+    case "mysql":
+      return (
+        <svg {...commonProps}>
+          <ellipse cx="24" cy="13" rx="15" ry="6" />
+          <path d="M9 13v19c0 3.3 6.7 6 15 6s15-2.7 15-6V13" />
+          <path d="M9 22c0 3.3 6.7 6 15 6s15-2.7 15-6" />
+          <path d="M9 31c0 3.3 6.7 6 15 6s15-2.7 15-6" />
+        </svg>
+      );
+    case "firebase":
+      return (
+        <svg {...commonProps}>
+          <path d="m8 38 6-31 9 17 5-10 12 24-16 7-16-7Z" />
+          <path d="m14 7 10 38" />
+          <path d="m28 14-4 31" />
+        </svg>
+      );
+    case "bootstrap":
+      return (
+        <svg {...commonProps}>
+          <rect x="8" y="9" width="32" height="30" rx="7" />
+          <path d="M19 16h8c4 0 6 1.8 6 4.7 0 2-1.2 3.5-3.4 4.1 2.8.6 4.4 2.3 4.4 4.8 0 3.4-2.5 5.4-7 5.4h-8V16Z" />
+          <path d="M23 20v4h4c1.6 0 2.4-.7 2.4-2s-.9-2-2.5-2H23Zm0 8v4.4h4.5c1.8 0 2.8-.8 2.8-2.2 0-1.5-1-2.2-2.9-2.2H23Z" />
+        </svg>
+      );
+    case "tailwind":
+      return (
+        <svg {...commonProps}>
+          <path d="M12 25c3-8 8-12 15-12 4.5 0 7.4 2 9.5 5.9 1.3 2.3 2.7 3.4 4.5 3.4-3 8-8 12-15 12-4.5 0-7.4-2-9.5-5.9-1.3-2.3-2.7-3.4-4.5-3.4Z" />
+          <path d="M7 34c3-8 8-12 15-12 4.5 0 7.4 2 9.5 5.9 1.3 2.3 2.7 3.4 4.5 3.4-3 8-8 12-15 12-4.5 0-7.4-2-9.5-5.9C10.2 35.1 8.8 34 7 34Z" />
+        </svg>
+      );
+    case "github":
+      return (
+        <svg {...commonProps}>
+          <path d="M24 6c-10 0-18 8.1-18 18 0 8 5.2 14.8 12.4 17.1.9.2 1.2-.4 1.2-.9v-3.4c-5 .9-6.1-2.1-6.1-2.1-.8-2-1.9-2.5-1.9-2.5-1.6-1.1.1-1.1.1-1.1 1.8.1 2.8 1.9 2.8 1.9 1.6 2.8 4.3 2 5.3 1.5.2-1.2.6-2 1.1-2.5-4-.5-8.2-2-8.2-8.8 0-1.9.7-3.5 1.9-4.8-.2-.5-.8-2.4.2-4.8 0 0 1.5-.5 5 1.8 1.5-.4 3-.6 4.6-.6 1.5 0 3.1.2 4.6.6 3.5-2.3 5-1.8 5-1.8 1 2.4.4 4.3.2 4.8 1.2 1.3 1.9 2.9 1.9 4.8 0 6.8-4.2 8.3-8.2 8.8.7.6 1.3 1.7 1.3 3.5v5.2c0 .5.3 1.1 1.3.9C36.8 38.8 42 32 42 24c0-9.9-8-18-18-18Z" />
+        </svg>
+      );
+    case "agile":
+      return (
+        <svg {...commonProps}>
+          <path d="M35 16a14 14 0 0 0-23 5" />
+          <path d="M30 16h5v-5" />
+          <path d="M13 32a14 14 0 0 0 23-5" />
+          <path d="M18 32h-5v5" />
+          <circle cx="24" cy="24" r="4" />
+        </svg>
+      );
+    case "figma":
+      return (
+        <svg {...commonProps}>
+          <path d="M24 24a7 7 0 1 1 7 7h-7v-7Z" />
+          <path d="M17 10h7v14h-7a7 7 0 1 1 0-14Z" />
+          <path d="M24 10h7a7 7 0 1 1 0 14h-7V10Z" />
+          <path d="M17 24h7v7a7 7 0 1 1-7-7Z" />
+        </svg>
+      );
+    default:
+      return (
+        <svg {...commonProps}>
+          <circle cx="24" cy="24" r="15" />
+          <path d="M24 13v22" />
+          <path d="M13 24h22" />
+        </svg>
+      );
+  }
+}
+
 function Header({ menuOpen, setMenuOpen }) {
   const menuButtonRef = useRef(null);
   const menuRef = useRef(null);
@@ -543,7 +668,12 @@ function Toolkit() {
       <div className="toolkit-grid" data-reveal="up">
         {techStacks.map((stack, index) => (
           <div className="tool-chip" key={stack.key}>
-            <span>{String(index + 1).padStart(2, "0")}</span>
+            <span className="tool-chip__index">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <span className="tool-chip__icon">
+              <ToolLogo type={stack.key} />
+            </span>
             <strong>{stack.label}</strong>
             <i aria-hidden="true">↗</i>
           </div>

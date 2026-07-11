@@ -2021,7 +2021,8 @@ svg {
   border-bottom: 1px solid rgba(18, 18, 15, 0.4);
   border-right: 1px solid rgba(18, 18, 15, 0.4);
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  gap: 0.95rem;
+  grid-template-columns: auto auto 1fr auto;
   min-height: 105px;
   padding: 1.2rem;
   transition:
@@ -2040,11 +2041,48 @@ svg {
   padding-left: 1.55rem;
 }
 
-.tool-chip > span {
+.tool-chip__index {
   font-size: 0.62rem;
   font-weight: 800;
-  margin-right: 0.85rem;
   opacity: 0.62;
+}
+
+.tool-chip__icon {
+  align-items: center;
+  background: rgba(18, 18, 15, 0.08);
+  border: 1px solid rgba(18, 18, 15, 0.48);
+  display: inline-flex;
+  height: 44px;
+  justify-content: center;
+  opacity: 1;
+  position: relative;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+  width: 44px;
+}
+
+.tool-logo {
+  display: block;
+  height: 25px;
+  overflow: visible;
+  width: 25px;
+}
+
+.tool-logo * {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.5;
+}
+
+.tool-logo rect,
+.tool-logo circle,
+.tool-logo path:first-child {
+  fill: currentColor;
+  fill-opacity: 0.08;
 }
 
 .tool-chip strong {
@@ -2065,6 +2103,13 @@ svg {
 .tool-chip:hover i {
   opacity: 1;
   transform: translate(0);
+}
+
+.tool-chip:hover .tool-chip__icon {
+  background: var(--acid);
+  border-color: var(--acid);
+  color: var(--ink);
+  transform: rotate(-4deg) scale(1.06);
 }
 
 /* Certifications */
@@ -2783,6 +2828,8 @@ svg {
   .tool-chip:nth-child(3n),
   .tool-chip:nth-child(4n) {
     border-right: 1px solid rgba(18, 18, 15, 0.4);
+    gap: 0.72rem;
+    grid-template-columns: auto auto minmax(0, 1fr);
     min-height: 88px;
     padding: 0.9rem;
   }
@@ -2793,6 +2840,16 @@ svg {
 
   .tool-chip strong {
     font-size: 0.78rem;
+  }
+
+  .tool-chip__icon {
+    height: 38px;
+    width: 38px;
+  }
+
+  .tool-logo {
+    height: 22px;
+    width: 22px;
   }
 
   .tool-chip i {
@@ -2905,11 +2962,22 @@ svg {
   }
 
   .tool-chip {
-    grid-template-columns: auto 1fr;
+    gap: 0.55rem;
+    grid-template-columns: auto 32px minmax(0, 1fr);
   }
 
-  .tool-chip > span {
+  .tool-chip__index {
     font-size: 0.5rem;
+  }
+
+  .tool-chip__icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .tool-logo {
+    height: 19px;
+    width: 19px;
   }
 }
 
